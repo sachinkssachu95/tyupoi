@@ -1,0 +1,220 @@
+/*body*/
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://64.media.tumblr.com/3e48cff7fd67ab300cebcc9d516df90f/313d954cd2fe308f-6c/s400x600/3d22fa65054c23bf763a55fac6704005acc90fbb.gifv) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+}
+a{
+    color:lawngreen;
+    font-weight: bolder;
+    text-decoration: none;
+}
+h1{
+    font-size:70px;
+    font-weight:bolder;
+    color: rgb(31, 19, 30);
+}
+h2{
+    font-size:16px;
+    font-weight:bolder;
+    color: rgb(79, 9, 145);
+}
+p{
+    font-size:16px;
+    font-weight:bolder;
+    color: black;
+}
+
+/*home page*/
+.container{
+    margin:20px;
+    padding:20px;
+}
+.subforum{
+    margin-top:20px;
+}
+.subforum-title{
+    background-color: #292B2E;
+    padding:5px;
+    border-radius: 5px;
+    margin:4px;
+}
+.subforum-description *{
+    margin-block: 0;
+}
+.subforum-row{
+    display:grid;
+    grid-template-columns: 7% 60% 13% 20%;
+}
+.subforum-column{
+    padding:10px;
+    margin:4px;
+    border-radius: 5px;
+    background-color: #111314;
+}
+.center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.subforum-icon{
+    font-size:45px;
+}
+.subforum-divider{
+    display:none;
+}
+
+/*navbar*/
+header{
+    margin-inline: 10px;
+}
+.navbar{
+    display:files;
+    align-items:center;
+}
+.navigation{
+    background-color: violet;
+    padding: 10px;
+    width:65%;
+    display:inline-block;
+    border-radius: 5px;
+    max-height: 80px;
+    margin-right: 10px;
+}
+.nav-list a{
+    float: right;
+    display: block;
+    text-align: center;
+    margin-inline: 20px;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+}
+.nav-item a:hover{
+    background-color: tomato;
+}
+.close-icon i{
+    font-size: 60px;
+    float: left;
+    cursor:pointer;
+}
+.hide{
+    display:none;
+}
+.bar-icon{
+    font-size: 60px;
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+    cursor: pointer;
+}
+.brand{
+    font-size: 60px;
+    display: inline-block;
+    font-family: fantasy;
+}
+
+/*search box*/
+.search-box{
+    
+    margin-top: 20px;
+    padding:20px;
+    display:flex;
+    justify-content:center;  
+}
+.search-box select{
+    padding:10px;
+}
+.search-box input{
+    padding:10px;
+}
+.search-box button{
+    padding:10px;
+    background-color: rgb(132, 188, 19);
+    color:white;
+}
+.search-box button:hover{
+    background-color: teal;
+    color:white;
+    box-shadow: 1px 2px 3px white;
+}
+
+/*Footer*/
+footer{
+    margin-top: 20px;
+    padding:20px;
+    background-color: rgb(114, 133, 131);
+    display: block;
+    text-align: center;
+}
+
+/*final page*/
+.head{
+    display: flex;
+    background-color:rgb(83, 106, 238);
+    padding: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.authors{
+    flex:20%;
+}
+.content{
+    flex:80%;
+}
+.body{
+    display: flex;
+    background-color:rgb(39, 185, 39);
+    padding: 10px;
+    margin-top: 5px;
+}
+.body .authours .username{
+    font-size: 20px;
+}
+.body .authors img{
+    max-height: 80px;
+    max-width: 50px;
+}
+.body .content .comment button{
+    border:none;
+    padding:10px;
+    font-weight: bolder;
+    box-shadow: 4px 6px white;
+    cursor: pointer;
+    float: right;
+}
+
+/*comment*/
+.comment-area{
+    margin-top: 50px;
+}
+.comment-area textarea{
+    width:100%;
+    min-height: 100px;
+    padding:10px;
+    margin-block: 10px;
+}
+.comment-area input{
+    float: right;
+    padding:10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.comment-area input:hover{
+    border:solid 1px #000000;
+}
+.comments-container{
+    margin-top: 50px;
+}
+
+
+
+
+

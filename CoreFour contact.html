@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Contact Form</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    </head>
+    <body>
+       <!--div class="alert-success">
+       <span>message sent! Thank you for contacting us.</span>
+        </div>
+ <div class="alert-error">
+                <span>Something went wrong Please try again.</span>
+                 </div-->
+              <style>
+                            
+            body{
+                min-height: 100vh;
+                background: url(https://images.unsplash.com/photo-1610332262984-c4b37b09bf8f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80) no-repeat;
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .contact-section{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .contact-info{
+                color:white;
+                max-width: 500px;
+                line-height: 65px;
+                padding-left: 50px;
+                font-size: 18px;
+            }
+            .contact-info{
+                margin-right: 200px;
+                font-size: 25px;
+            }
+            .Contact-form{
+                max-width: 700px;
+                margin-right: 50px;
+            }
+            .contact-info,.Contact-form{
+                flex: 1;
+            }
+            .Contact-form h2{
+                color: #fff;
+                text-align: center;
+                font-size: 35px;
+                text-transform: uppercase;
+                margin-bottom: 30px;
+            }
+            .Contact-form .text-box{
+                background:#fff;
+                color: #000;
+                border: none;
+                width: calc(50%-10px);
+                height: 50px;
+                padding: 12px;
+                font-size: 15px;
+                border-radius: 5px;
+                box-shadow: 0 1px 1px rgba(red, green, blue, alpha);
+                margin-bottom: 20px;
+                opacity: 0.9;
+
+            }
+            .Contact-form .text-box:first-child{
+                margin-right: 15px;
+            }
+            .Contact-form textarea{
+                background: #000;
+                border: none;
+                width: 100%;
+                padding: 12px;
+                font-size: 15px;
+                min-height: 200px;
+                max-height: 400px;
+                resize: vertical;
+                border-radius: 5px;   
+                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+                margin-bottom: 20px;
+                opacity: 0.9;
+            }
+            .Contact-form .send-button{
+                float: right;
+                background: royalblue;
+                color: #fff;
+                border: none;
+                width: 120px;
+                height: 40px;
+                font-size: 15px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: 0.3s;
+                transition-property: background ;
+            }
+            .Contact-form .send-button:hover{
+                background: #0582e3;
+
+            }
+            @media screen and (max-width:950px){
+                .contact-section{
+                    flex-direction: column;
+            
+                }
+                .contact-info .Contact-form{
+                    margin: 30px 50px;
+                }
+                .Contact-form h2{
+                    font-size: 30px;
+                }
+                .Contact-form .text-box{
+                    width: 100%;
+                }
+            }
+              .alert-success{
+                  z-index: 1;
+                  background: #d4edda;
+                  font-size: 18px;
+                  padding: 20px 40px;
+                  min-width: 420px;
+                  position: fixed;
+                  right: 0;
+                  top: 10px;
+                  border-left: 8px solid #3ad66e;
+                  border-radius: 4px;
+
+              }
+              .alert-error{
+                  z-index: 1;
+                  background:#fff3cd;
+                  font-size: 18px;
+                  padding: 20px 40px;
+                  min-width: 420px;
+                  position: fixed;
+                  right: 0;
+                  top: 10px;
+                  border-left: 8px solid #ffa502;
+                  border-radius: 4px;
+
+              }
+              
+
+        </style>
+        <div class="contact-section">
+        <div class="contact-info">
+        <div><i class="fas fa-map-marker-alt"></i>Address, City, Country</div>
+        <div><i class="fas fa-envelope"></i>contact@email.com</div>
+        <div><i class="fas fa-phone"></i>9339449559</div>
+        <div><i class="fas fa-clock"></i>Mon-Fri 8:00 AM-5:00 PM</div>
+        </div>
+        <div class="Contact-form">
+            <h2>Contact Us</h2>
+            <form class="contact" action="index.html" method="POST">
+                <input type="text" name="name" class="text-box" placeholder="Your Name" required>
+                <input type="email" name="email" class="text-box" placeholder="Your email" required>
+                <textarea name="message" rows="5" class="text-box" placeholder="Your Message" required></textarea>
+                <input type="submit" name="submit" class="send-button" value="Send">
+
+            </form>
+        </div>
+        </div>
+    </body>
+</html>
